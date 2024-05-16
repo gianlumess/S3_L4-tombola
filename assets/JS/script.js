@@ -27,5 +27,18 @@ const createCells = (cells) => {
     tabellone.appendChild(tombolaCell);
   }
 };
+
+//3. creo funzione per bottone che estrae un numero random da 1 a 76
+const generateRandomNumber = () => {
+  //3.1 creo riferimento del bottone alla pagina html
+  const button = document.querySelector("button");
+
+  //3.2 creo funzione al click del bottone che mi genera un numero random da 1 a 76
+  button.onclick = (event) => {
+    const randomNumber = Math.floor(Math.random() * 76) + 1;
+  };
+};
+
 const cells = 76;
 createCells(cells);
+generateRandomNumber();
