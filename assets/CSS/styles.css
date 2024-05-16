@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cell {
+  display: inline-block;
+  width: 5%;
+  height: 100px;
+}
+
+#container {
+  max-width: 70%;
+  margin: auto;
+}
